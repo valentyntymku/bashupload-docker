@@ -38,8 +38,6 @@ RUN touch /var/log/cron.log
 # Create /run/php-fpm directory
 RUN mkdir -p /run/php-fpm
 
-# Create /var/files directory for file storage
-RUN mkdir -p /var/files
 VOLUME /var/files
 
 # Expose ports 80 and 443
